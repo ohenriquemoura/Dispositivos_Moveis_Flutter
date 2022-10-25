@@ -11,12 +11,21 @@ class CustomCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: ((context) => IndividualPage(ChatModel: ChatModel,))));
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: ((context) => IndividualPage(
+                      ChatModel: ChatModel,
+                    ))));
       },
       child: Column(
         children: [
           ListTile(
-            leading: CircleAvatar(radius: 30,),
+            leading: CircleAvatar(
+              child: Image.asset('images/batman.png'),
+              radius: 30,
+              backgroundColor: Color.fromARGB(255, 94, 7, 7),
+            ),
             title: Text(
               ChatModel.name,
               style: TextStyle(
@@ -43,7 +52,6 @@ class CustomCard extends StatelessWidget {
           Divider(
             thickness: 1,
           ),
-          
         ],
       ),
     );

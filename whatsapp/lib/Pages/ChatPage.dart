@@ -11,83 +11,22 @@ class ChatPage extends StatefulWidget {
 }
 
 class _ChatPageState extends State<ChatPage> {
-
-  List<ChatModel>chats = [
-    ChatModel(
-      name: "Artur",
-      time: "2:00",
-      telefone: "992176948"
-    ),
-    ChatModel(
-      name: "Thiago",
-      time: "5:00",
-      telefone: "992171926"
-    ),
-    ChatModel(
-      name: "Caio",
-      time: "1:30",
-      telefone: "991855940"
-    ),
-    ChatModel(
-      name: "Maria",
-      time: "13:00",
-      telefone: "912345678"
-    ),
-    ChatModel(
-      name: "Carla",
-      time: "19:00",
-      telefone: "995674777"
-    ),
-    ChatModel(
-      name: "Karol",
-      time: "21:00",
-      telefone: "947558940"
-    ),
-    ChatModel(
-      name: "Rafael",
-      time: "19:00",
-      telefone: "337876138"
-    ),
-    ChatModel(
-      name: "Julia",
-      time: "19:00",
-      telefone: "999829334"
-    ),
-    ChatModel(
-      name: "Camila",
-      time: "19:00",
-      telefone: "995646391"
-    ),
-    ChatModel(
-      name: "Nicolas",
-      time: "19:00",
-      telefone: "975647690"
-    ),
-    ChatModel(
-      name: "Cris",
-      time: "19:00",
-      telefone: "9924567481"
-    ),
-    ChatModel(
-      name: "Rodrigo",
-      time: "19:00",
-      telefone: "995674777"
-    ),
-    ChatModel(
-      name: "Felipe",
-      time: "19:00",
-      telefone: "994157388"
-    ),
-    ChatModel(
-      name: "Leticia",
-      time: "19:00",
-      telefone: "990098431"
-    ),
-    ChatModel(
-      name: "Mateus",
-      time: "19:00",
-      telefone: "9993456780"
-    ),
+  List<ChatModel> chats = [
+    ChatModel(name: "Henrique", time: "7:00", telefone: "(37) 97947-6829"),
+    ChatModel(name: "Clara", time: "19:00", telefone: "(35) 99747-6081"),
+    ChatModel(name: "Lorenza", time: "22:30", telefone: "(34) 98968-2555"),
+    ChatModel(name: "Julinha", time: "13:00", telefone: "(38) 99526-7546"),
+    ChatModel(name: "Raquel", time: "9:00", telefone: "(34) 99143-8781"),
+    ChatModel(name: "Ana", time: "21:00", telefone: "(35) 97955-3301"),
+    ChatModel(name: "Marina", time: "9:00", telefone: "(33) 98018-1245"),
+    ChatModel(name: "Julio", time: "8:00", telefone: "(33) 99368-5332"),
+    ChatModel(name: "Cleber", time: "17:00", telefone: "(32) 99670-1157"),
+    ChatModel(name: "Helen", time: "23:00", telefone: "(31) 99942-0084"),
+    ChatModel(name: "Cristiano", time: "8:00", telefone: "(37) 97901-2854"),
+    ChatModel(name: "Marco", time: "00:00", telefone: "(31) 98615-8185"),
+    ChatModel(name: "Fernando", time: "6:00", telefone: "(33) 98075-4963"),
+    ChatModel(name: "jefferson", time: "13:00", telefone: "(32) 98541-8448"),
+    ChatModel(name: "jair", time: "7:00", telefone: "(35) 98435-8816"),
   ];
   @override
   Widget build(BuildContext context) {
@@ -97,11 +36,10 @@ class _ChatPageState extends State<ChatPage> {
         child: Icon(Icons.chat),
       ),
       body: ListView.builder(
-          itemCount: chats.length,
-          itemBuilder: (context,index)=>CustomCard(
-            ChatModel: chats[index],
-          ),
-        
+        itemCount: chats.length,
+        itemBuilder: (context, index) => CustomCard(
+          ChatModel: chats[index],
+        ),
       ),
     );
   }

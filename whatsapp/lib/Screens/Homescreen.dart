@@ -1,4 +1,4 @@
-import'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:whatsapp/Pages/ChatPage.dart';
 
 class Homescreen extends StatefulWidget {
@@ -8,30 +8,30 @@ class Homescreen extends StatefulWidget {
   State<Homescreen> createState() => _HomescreenState();
 }
 
-class _HomescreenState extends State<Homescreen> with SingleTickerProviderStateMixin{
+class _HomescreenState extends State<Homescreen>
+    with SingleTickerProviderStateMixin {
   late TabController _controller;
   @override
   void initState() {
     super.initState();
     _controller = TabController(length: 4, vsync: this, initialIndex: 1);
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Whatsapp clone"),
-        
-        actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.search))
-        ],
+        backgroundColor: Color.fromARGB(255, 94, 7, 7),
+        title: Text("App do Whatsapp!"),
+        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.search))],
         bottom: TabBar(
           controller: _controller,
           tabs: [
             Tab(
-              text: "CHATS",
+              text: "Conversas",
             ),
             Tab(
-              text: "STATUS",
+              text: "Status",
             ),
           ],
         ),
