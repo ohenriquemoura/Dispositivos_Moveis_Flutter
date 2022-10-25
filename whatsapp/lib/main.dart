@@ -4,16 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp/Screens/Homescreen.dart';
 
 void main() {
-  runApp( MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        primaryColor: Color(0xFF075E54), accentColor: Color(0xFF128C7E),
-      ),
+      theme: ThemeData(primaryColor: Color.fromARGB(255, 94, 7, 7)),
       home: Homescreen(),
     );
   }

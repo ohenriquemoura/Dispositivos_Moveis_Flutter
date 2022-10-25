@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp/Model/ChatModel.dart';
 
 class IndividualPage extends StatefulWidget {
-  const IndividualPage({super.key,this.ChatModel});
+  const IndividualPage({super.key, this.ChatModel});
   final ChatModel;
 
   @override
